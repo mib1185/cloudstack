@@ -801,9 +801,9 @@ INSERT INTO `cloud`.`guest_os_hypervisor` (uuid,hypervisor_type, hypervisor_vers
 INSERT INTO `cloud`.`guest_os_hypervisor` (uuid,hypervisor_type, hypervisor_version, guest_os_name, guest_os_id, created, is_user_defined) VALUES (UUID(),'VMware', '6.7.3', 'opensuse64Guest', 326, now(), 0);
 
 
--- Add SCO OpenServer 6   as support guest os
-INSERT INTO `cloud`.`guest_os` (id, uuid, category_id, display_name, created) VALUES (327, UUID(), 7, 'SCO OpenServer 6', now());
--- SCO OpenServer 6   VMWare guest os mapping
+-- Add OpenSUSE Linux   as support guest os
+INSERT INTO `cloud`.`guest_os` (id, uuid, category_id, display_name, created) VALUES (327, UUID(), 7, 'OpenSUSE Linux', now());
+-- OpenSUSE Linux   VMWare guest os mapping
 INSERT INTO `cloud`.`guest_os_hypervisor` (uuid,hypervisor_type, hypervisor_version, guest_os_name, guest_os_id, created, is_user_defined) VALUES (UUID(),'VMware', '6.0', 'opensuseGuest', 327, now(), 0);
 INSERT INTO `cloud`.`guest_os_hypervisor` (uuid,hypervisor_type, hypervisor_version, guest_os_name, guest_os_id, created, is_user_defined) VALUES (UUID(),'VMware', '6.5', 'opensuseGuest', 327, now(), 0);
 INSERT INTO `cloud`.`guest_os_hypervisor` (uuid,hypervisor_type, hypervisor_version, guest_os_name, guest_os_id, created, is_user_defined) VALUES (UUID(),'VMware', '6.7', 'opensuseGuest', 327, now(), 0);
